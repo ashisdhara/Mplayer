@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00A8DD"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bSeekbar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:onClick="toggleSeekbar"
+                android:text="Seekbar"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/bShuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="#000000"
+                android:checked="false"
+                android:gravity="center"
+                android:onClick="shuffle"
+                android:text="Shuffle"
+                android:textColor="#FFFFFF"
+                android:textOff="Shuff Off"
+                android:textOn="Shuff On"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bplaying"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:onClick="gotoPlaying"
+                android:text="Now Playing >"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
